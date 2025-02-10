@@ -1,58 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Financial Risk Assessment</title>
+    <title>What Investor Personality Are You?</title>
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f0f4f8; }
-        h1 { color: #2c3e50; }
-        .container { max-width: 800px; margin: 0 auto; }
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+        h1 { color: darkgreen; }
+        img { width: 200px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>💰 Financial Risk Tolerance Quiz</h1>
-        <p>Complete this assessment to determine your ideal investment strategy:</p>
+    <h1> Investor Personality Quiz</h1>
+    <img src="https://tinyurl.com/stock-chart-icon" alt="Stock chart">
+    
+    <form action="investor_result.html" method="GET">
+        <!-- Question 1 -->
+        <p>How do you react to market drops?</p>
+        <select name="reaction" id="reaction">
+            <option value="panic">Sell everything immediately</option>
+            <option value="hold">Hold my investments</option>
+            <option value="buy">Invest more</option>
+        </select>
         
-        <form action="portfolio.html" method="GET">
-            <!-- Investment Type Selection -->
-            <label for="investment">Preferred Investment Type:</label>
-            <select name="investment" id="investment">
-                <option value="stocks">Growth Stocks</option>
-                <option value="bonds">Government Bonds</option>
-                <option value="etf">Index ETFs</option>
-            </select>
-            <br><br>
-
-            <!-- Risk Tolerance -->
-            <fieldset>
-                <legend>Risk Tolerance:</legend>
-                <input type="radio" id="conservative" name="risk" value="conservative">
-                <label for="conservative">Conservative (0-2% volatility)</label><br>
-                
-                <input type="radio" id="moderate" name="risk" value="moderate">
-                <label for="moderate">Moderate (2-5% volatility)</label><br>
-                
-                <input type="radio" id="aggressive" name="risk" value="aggressive">
-                <label for="aggressive">Aggressive (5%+ volatility)</label>
-            </fieldset>
-            <br>
-
-            <!-- Investment Horizon -->
-            <label for="horizon">Investment Horizon (years):</label>
-            <input type="number" id="horizon" name="horizon" placeholder="Enter 5-20" min="5" max="20">
-            <br><br>
-
-            <!-- Security Check -->
-            <label for="pin">Security PIN (4 digits):</label>
-            <input type="password" id="pin" name="pin" pattern="\d{4}" title="4-digit number required">
-            <br><br>
-
-            <input type="submit" value="Generate Portfolio">
-        </form>
-
-        <!-- Temporary banner design commented out -->
-        <!-- <div class="promo-banner">New: ESG Investing Options!</div> -->
-    </div>
+        <br><br>
+        
+        <!-- Question 2 -->
+        <p>Your main investment goal:</p>
+        <input type="radio" id="safety" name="goal" value="safety">
+        <label for="safety">Capital preservation</label><br>
+        
+        <input type="radio" id="growth" name="goal" value="growth">
+        <label for="growth">Steady growth</label><br>
+        
+        <input type="radio" id="risk" name="goal" value="risk">
+        <label for="risk">High returns</label>
+        
+        <br><br>
+        
+        <!-- Question 3 -->
+        <label for="years">Investment horizon (years):</label>
+        <input type="number" id="years" name="years" placeholder="5-30" min="5" max="30">
+        
+        <br><br>
+        
+        <!-- Question 4 -->
+        <label for="symbol">Favorite stock symbol:</label>
+        <input type="text" id="symbol" name="symbol" placeholder="e.g., AAPL" 
+               pattern="[A-Z]{1,5}" title="Uppercase letters only">
+        
+        <br><br>
+        <input type="submit" value="Reveal My Investor Type">
+    </form>
+    
+    <!-- Future feature: Social sharing commented out -->
+    <!-- <div class="social-share">Share your results</div> -->
 </body>
 </html>

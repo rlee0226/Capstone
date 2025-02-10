@@ -1,48 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Your Investment Portfolio</title>
+    <title>Your Investor Profile</title>
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.6; }
-        .portfolio { background: #fff; padding: 2rem; border-radius: 8px; }
-        a { color: #2980b9; text-decoration: none; }
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .result-box { border: 2px solid darkgreen; padding: 20px; margin: 20px 0; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>📈 Recommended Investment Portfolio</h1>
+    <h1>🌟 Your Investor Profile</h1>
+    
+    <div class="result-box">
+        <h2>The Conservative Investor</h2>
+        <img src="https://tinyurl.com/conservative-investor" alt="Safe investments">
         
-        <div class="portfolio">
-            <h2>Asset Allocation</h2>
-            <ol>
-                <li>Equities
-                    <ul>
-                        <li>60% Blue Chip Stocks</li>
-                        <li>20% Growth Tech Stocks</li>
-                    </ul>
-                </li>
-                <li>Fixed Income (15%)</li>
-                <li>Cash & Equivalents (5%)</li>
-            </ol>
-
-            <h2>Key Features</h2>
-            <blockquote>
-                "Diversification is the only free lunch in investing" 
-                <cite>- Harry Markowitz</cite>
-            </blockquote>
-
-            <p><strong>Risk Level:</strong> Moderate (3/5)<br>
-            <em>Recommended investment horizon:</em> 7-10 years</p>
-        </div>
-
-        <a href="https://www.investopedia.com" target="_blank">Learn Investing Basics</a> |
-        <a href="financial_quiz.html">Retake Assessment</a>
-        <br><br>
-
-        <a href="https://finance.yahoo.com" target="_blank">
-            <img src="https://tinyurl.com/stock-chart-gif" alt="Market Trends" width="400">
-        </a>
+        <p><strong>Your traits:</strong></p>
+        <ul>
+            <li>Prefers low-risk investments</li>
+            <li>Typical portfolio:
+                <ol>
+                    <li>60% Bonds</li>
+                    <li>30% Blue-chip stocks</li>
+                    <li>10% Cash</li>
+                </ol>
+            </li>
+        </ul>
+        
+        <p><em>"Slow and steady wins the race"</em></p>
     </div>
+    
+    <p>Explore more:</p>
+    <a href="https://www.investor.gov">Investor Education Resources</a><br>
+    <a href="investor_quiz.html">Retake the quiz</a>
+    
+    <br><br>
+    <a href="https://finance.yahoo.com">
+        <img src="https://tinyurl.com/market-news-img" alt="Market news" width="300">
+    </a>
 </body>
 </html>
