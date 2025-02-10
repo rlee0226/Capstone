@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Risk Assessment</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f0f4f8; }
+        h1 { color: #2c3e50; }
+        .container { max-width: 800px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Financial Risk Tolerance Quiz</h1>
+        <p>Complete this assessment to determine your ideal investment strategy:</p>
+        
+        <form action="portfolio.html" method="GET">
+            <!-- Investment Type Selection -->
+            <label for="investment">Preferred Investment Type:</label>
+            <select name="investment" id="investment">
+                <option value="stocks">Growth Stocks</option>
+                <option value="bonds">Government Bonds</option>
+                <option value="etf">Index ETFs</option>
+            </select>
+            <br><br>
+
+            <!-- Risk Tolerance -->
+            <fieldset>
+                <legend>Risk Tolerance:</legend>
+                <input type="radio" id="conservative" name="risk" value="conservative">
+                <label for="conservative">Conservative (0-2% volatility)</label><br>
+                
+                <input type="radio" id="moderate" name="risk" value="moderate">
+                <label for="moderate">Moderate (2-5% volatility)</label><br>
+                
+                <input type="radio" id="aggressive" name="risk" value="aggressive">
+                <label for="aggressive">Aggressive (5%+ volatility)</label>
+            </fieldset>
+            <br>
+
+            <!-- Investment Horizon -->
+            <label for="horizon">Investment Horizon (years):</label>
+            <input type="number" id="horizon" name="horizon" placeholder="Enter 5-20" min="5" max="20">
+            <br><br>
+
+            <!-- Security Check -->
+            <label for="pin">Security PIN (4 digits):</label>
+            <input type="password" id="pin" name="pin" pattern="\d{4}" title="4-digit number required">
+            <br><br>
+
+            <input type="submit" value="Generate Portfolio">
+        </form>
+
+        <!-- Temporary banner design commented out -->
+        <!-- <div class="promo-banner">New: ESG Investing Options!</div> -->
+    </div>
+</body>
+</html>

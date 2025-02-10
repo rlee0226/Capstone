@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Investment Portfolio</title>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.6; }
+        .portfolio { background: #fff; padding: 2rem; border-radius: 8px; }
+        a { color: #2980b9; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 Recommended Investment Portfolio</h1>
+        
+        <div class="portfolio">
+            <h2>Asset Allocation</h2>
+            <ol>
+                <li>Equities
+                    <ul>
+                        <li>60% Blue Chip Stocks</li>
+                        <li>20% Growth Tech Stocks</li>
+                    </ul>
+                </li>
+                <li>Fixed Income (15%)</li>
+                <li>Cash & Equivalents (5%)</li>
+            </ol>
+
+            <h2>Key Features</h2>
+            <blockquote>
+                "Diversification is the only free lunch in investing" 
+                <cite>- Harry Markowitz</cite>
+            </blockquote>
+
+            <p><strong>Risk Level:</strong> Moderate (3/5)<br>
+            <em>Recommended investment horizon:</em> 7-10 years</p>
+        </div>
+
+        <a href="https://www.investopedia.com" target="_blank">Learn Investing Basics</a> |
+        <a href="financial_quiz.html">Retake Assessment</a>
+        <br><br>
+
+        <a href="https://finance.yahoo.com" target="_blank">
+            <img src="https://tinyurl.com/stock-chart-gif" alt="Market Trends" width="400">
+        </a>
+    </div>
+</body>
+</html>
