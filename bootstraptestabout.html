@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | My Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .custom-border {
+      border: 2px solid #444;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #e3f2fd;
+    }
+    .team-member {
+      border: 2px dashed #555;
+      padding: 40px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .team-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="bootstraptestindex.html">Ryan's Project</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="bootstraptestindex.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="bootstraptestabout.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            Car Reviews
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.caranddriver.com/reviews/a15107243/ferrari-laferrari-hypercar-tested-review/">Ferrari LaFerrari</a></li>
+            <li><a class="dropdown-item" href="https://www.caranddriver.com/reviews/a15108986/2014-mclaren-p1-test-review/">McLaren P1</a></li>
+            <li><a class="dropdown-item" href="https://www.caranddriver.com/features/a15111035/the-2015-porsche-918-spyder-is-the-quickest-road-car-in-the-world-feature/">Porsche 918</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container custom-border">
+  <h1 class="display-5 text-center text-primary">Meet the Team</h1>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="team-member">
+        <img src="https://media-hosting.imagekit.io/b994b0280ad54598/IMG_2021.jpeg?Expires=1840127010&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=lrTCKdAUzLagVOP6zzWGTjvIw9XwXCZpSrqQJEQ4y2u1CHFbdCgA~C4a2FiGba45AhuszGQ6xCV2NkIdt1ViDihRzqSu6YgXcIEhGdgP674T5sDkR8XBNRy0ko80OZW-6ebPOUUWVb4aHCycQrjF24t22nnrVRhsuEKflrfApsT~JVjWrQWVVvXOZBNJnFO~T8ShT3H4muws4IEZzzeiHfvGZp8yGKdwIYKGWWpDkml~8EYu~OPPcgsNM0CjNs37ZLhRF343eVttN5HGe-h6n2WF1IIJvYTuwZVTJIGWZfhKSGD3c6Erdes48H-0p-iFp~cn-zN-ekKj9I~iyitDCw__" alt="Ryan" class="team-img">
+        <h2 class="display-6">Ryan</h2>
+        <p class="lead">Lead Developer</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="team-member">
+        <img src="https://i.kym-cdn.com/entries/icons/facebook/000/053/659/chimpanzini_bannanini.jpg" alt="Famous Person" class="team-img">
+        <h2 class="display-6">Chimpanzini Bananini</h2>
+        <p class="lead">Chief Vibes Officer</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
